@@ -1,0 +1,79 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\ProgrammingProjects\\.NET\\15_02_2017\\15_02_2017_PocetniProjekt\\Ispit_2017_02_15\\Ispit_2017_02_15.csproj": {}
+  },
+  "projects": {
+    "D:\\ProgrammingProjects\\.NET\\15_02_2017\\15_02_2017_PocetniProjekt\\Ispit_2017_02_15\\Ispit_2017_02_15.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\ProgrammingProjects\\.NET\\15_02_2017\\15_02_2017_PocetniProjekt\\Ispit_2017_02_15\\Ispit_2017_02_15.csproj",
+        "projectName": "Ispit_2017_02_15",
+        "projectPath": "D:\\ProgrammingProjects\\.NET\\15_02_2017\\15_02_2017_PocetniProjekt\\Ispit_2017_02_15\\Ispit_2017_02_15.csproj",
+        "packagesPath": "C:\\Users\\cehaj\\.nuget\\packages\\",
+        "outputPath": "D:\\ProgrammingProjects\\.NET\\15_02_2017\\15_02_2017_PocetniProjekt\\Ispit_2017_02_15\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\cehaj\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.0": {
+          "dependencies": {
+            "Microsoft.AspNetCore.All": {
+              "target": "Package",
+              "version": "[2.0.3, )"
+            },
+            "Microsoft.AspNetCore.Http.Extensions": {
+              "target": "Package",
+              "version": "[2.0.1, )"
+            },
+            "Microsoft.AspNetCore.Session": {
+              "target": "Package",
+              "version": "[2.0.1, )"
+            },
+            "Microsoft.Extensions.Caching.Memory": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "target": "Package",
+              "version": "[2.0.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.0.4, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

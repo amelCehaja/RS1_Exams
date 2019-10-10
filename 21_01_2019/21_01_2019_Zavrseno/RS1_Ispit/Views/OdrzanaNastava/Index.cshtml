@@ -1,0 +1,39 @@
+﻿@model RS1_Ispit_asp.net_core.ViewModels.PrikazNastavnikaVM
+
+<table class="table" border="1">
+    <thead>
+        <tr>
+            <th>Skola</th>
+            <th>Ime i prezime nastavnika</th>
+            <th>Akcija</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var x in Model.Nastavnici)
+        {
+            <tr>
+                <td>
+                    @foreach (var skola in x.Skola)
+                    {
+                        <p>@skola</p>
+                    }
+                </td>
+                <td class="imePrezime">@x.ImePrezime</td>
+                <td><a href="/OdrzanaNastava/PrikazMaturskihIspita?id=@x.ID">Odaberi</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
+<style>
+    td, th{
+        text-align:center;
+    }
+    .imePrezime{
+        text-align:left;
+    }
+    th{
+        background-color:gray;
+        color:black;
+        font-weight:bold;
+    }
+</style>

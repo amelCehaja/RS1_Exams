@@ -1,0 +1,81 @@
+﻿@model Ispit.Web.ViewModels.PrikazDogadajaVM
+
+<div class="alert alert-warning" role="alert">
+    <strong>Događaj "ISPIT RS1" - 13.02.2018.</strong> <br />
+    Ovo je podsjetnik za obavezu "Pregledati pdf materijale". Označi kao <a href="" class="">pročitanu.</a>
+</div>
+
+<table class="table table-bordered" border="1">
+    <thead>
+        <tr>
+            <td colspan="5" class="nazivTabele">Neoznačeni događaji</td>
+        </tr>
+        <tr>
+            <th>Datum</th>
+            <th>Nastavnik</th>
+            <th>Opis</th>
+            <th>Broj obaveza</th>
+            <th>Akcija</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var x in Model.neoznaceniDogadaji)
+        {
+            <tr>
+                <td>@x.Datum.Date.ToString("dd.MM.yyyy")</td>
+                <td>@x.Nastavnik</td>
+                <td>@x.Opis</td>
+                <td>@x.BrojObaveza</td>
+                <td>
+                    @if (x.Datum < DateTime.Now)
+                    {
+                        <p>PROSLO</p>
+                    }
+                    else
+                    {
+                        <a href="/OznaceniDogadaji/Dodaj?id=@x.ID">Dodaj</a>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<br />
+<hr />
+<br />
+
+<table class="table table-bordered" border="1">
+    <thead>
+        <tr>
+            <td colspan="5" class="nazivTabele">Označeni događaji</td>
+        </tr>
+        <tr>
+            <th>Datum</th>
+            <th>Nastavnik</th>
+            <th>Opis</th>
+            <th>Relizovano obaveza RO</th>
+            <th>Akcija</th>
+    </thead>
+    <tbody>
+        @foreach (var x in Model.oznaceniDogadaji)
+        {
+            <tr>
+                <td>@x.Datum.Date.ToString("dd.MM.yyyy")</td>
+                <td>@x.Nastavnik</td>
+                <td>@x.Opis</td>
+                <td>@x.RealizovanoObaveza</td>
+                <td><a href="/OznaceniDogadaji/Detalji?id=@x.ID">Detalji</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
+<style>
+    td, th{
+        text-align:center;
+    }
+    .nazivTabele{
+        background-color:gray;
+        color:white;
+        font-weight:bold;
+    }
+</style>

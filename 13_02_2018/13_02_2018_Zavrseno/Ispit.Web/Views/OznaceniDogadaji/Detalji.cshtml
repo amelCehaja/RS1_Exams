@@ -1,0 +1,24 @@
+﻿@model Ispit.Web.ViewModels.DetaljiDogadaja
+
+<input asp-for="ID" hidden id="id" />
+<table style="width:500px;" border="1" class="table">
+    <tr>
+        <td>Datum dogadaja</td>
+        <td>@Model.DatumDogadaja</td>
+    </tr>
+    <tr>
+        <td>Datum dodavanja</td>
+        <td>@Model.DatumDodavanja</td>
+    </tr>
+    <tr>
+        <td>Opis dogadaja</td>
+        <td>@Model.Opis</td>
+    </tr>
+    <tr>
+        <td>Nastavnik</td>
+        <td>@Model.Nastavnik</td>
+    </tr>
+</table>
+
+<div id="ajaxDiv"></div>
+<script src="~/js/DetaljiDogadajaAjax.js"></script>

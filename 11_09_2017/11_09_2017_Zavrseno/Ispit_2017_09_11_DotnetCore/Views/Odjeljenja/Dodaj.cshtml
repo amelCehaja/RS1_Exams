@@ -1,0 +1,27 @@
+﻿@using Ispit_2017_09_11_DotnetCore.ViewModels
+@model DodajOdjeljenjeVM
+
+<form action="/Odjeljenja/Spremi" method="post">
+    <h2>Novo odjeljenje</h2>
+    <div class="form-group">
+        <label>Školska godina:</label>
+        <input asp-for="SkolskaGodina" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Razred: </label>
+        <input asp-for="Razred" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Oznaka:</label>
+        <input asp-for="Oznaka" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Razrednik</label>
+        <select asp-for="RazrednikID" asp-items="Model.Nastavnici" class="form-control"></select>
+    </div>
+    <div class="form-group">
+        <label>Preuzmi učenike iz nižeg odjeljenja</label>
+        <select asp-for="NizeOdjeljenjeId" asp-items="Model.NizaOdjeljenja" class="form-control"></select>
+    </div>
+    <button type="submit" class="btn btn-success">Spremi</button>
+</form>

@@ -1,0 +1,29 @@
+﻿@model RS1_Ispit_2017_06_21_v1.ViewModels.PrikazMaturskihIspita
+
+<table class="table table-bordered" border="1">
+    <thead>
+        <tr>
+            <th colspan="5">Prikaz evidentiranih maturskih ispita</th>
+        </tr>
+        <tr>
+            <th>Datum</th>
+            <th>Odjeljenje</th>
+            <th>Ispitivac</th>
+            <th>Prosjecni bodovi</th>
+            <th>Akcija</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var x in Model.MaturskiRadovi)
+        {
+            <tr>
+                <td>@x.Datum</td>
+                <td>@x.Odjeljenje</td>
+                <td>@x.Ispitivac</td>
+                <td>@x.ProsjecniBodovi</td>
+                <td><a href="/ispiti/DetaljiMaturskog?maturskiID=@x.ID">Detalji</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
+<a href="/ispiti/dodajMaturski">Dodaj</a>

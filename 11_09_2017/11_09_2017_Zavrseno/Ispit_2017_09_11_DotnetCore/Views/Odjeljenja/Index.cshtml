@@ -1,0 +1,37 @@
+﻿@using Ispit_2017_09_11_DotnetCore.ViewModels
+@model PrikazOdjeljenjaVM
+
+<table class="table">
+    <thead>
+        <tr>
+            <th colspan="8" style="background-color:gray; color:white; font-weight:bold;">Prikaz odjeljenja</th>
+        </tr>
+        <tr>
+            <th>Školska godina</th>
+            <th>Razred (1 do 4)</th>
+            <th>Oznaka</th>
+            <th>Razrednik</th>
+            <th>Prebačeni u više odjeljenje</th>
+            <th>Prosjek ocjena</th>
+            <th>Najbolji učenik</th>
+            <th>Akcija</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var x in Model.Odjeljenja)
+        {
+            <tr>
+                <td>@x.SkolskaGodina</td>
+                <td>@x.Razred</td>
+                <td>@x.Oznaka</td>
+                <td>@x.Razrdenik</td>
+                <td>@x.PrebaceniUVise</td>
+                <td>@x.ProsjekOcjena</td>
+                <td>@x.NajboljiUcenik</td>
+                <td><a href="/Odjeljenja/Detalji?odjeljenjeID=@x.ID" class="btn btn-info">Detalji</a> | <a href="/Odjeljenja/Obrisi?odjeljenjeID=@x.ID" class="btn btn-danger">Obriši</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a href="/Odjeljenja/Dodaj" class="btn">Dodaj</a>

@@ -1,0 +1,31 @@
+﻿@model RS1_Ispit_asp.net_core.ViewModels.PrikazOdrzaniCasovaVM
+
+<table class="table" border="1">
+    <thead>
+        <tr>
+            <th>Datum odrzanog casa</th>
+            <th>Skolska godina / Odjeljenje</th>
+            <th>Predmet</th>
+            <th>Odsutni ucenici</th>
+            <th>Akcija</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var x in Model.Casovi)
+        {
+            <tr>
+                <td>@x.Datum</td>
+                <td>@x.SkolaOdjeljenje</td>
+                <td>@x.Predmet</td>
+                <td>
+                    @foreach(var ucenik in x.Odsutni)
+                    {
+                        <span>@ucenik, </span>
+                    }
+                </td>
+                <td><a href="/odrzanaNastava/editCas?id=@x.ID">Edit</a> | <a href="/odrzanaNastava/obrisiCas?id=@x.ID">Obrisi</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
+<a href="/odrzanaNastava/DodajCas?nastavnikID=@Model.NastavnikID&&skolaID=@Model.SKolaID" class="btn btn-success">Dodaj</a>

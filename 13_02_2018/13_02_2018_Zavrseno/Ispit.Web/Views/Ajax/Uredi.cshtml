@@ -1,0 +1,16 @@
+﻿@model Ispit.Web.ViewModels.UrediStanjeObaveze
+
+<form id="forma">
+    <input asp-for="ID" hidden />
+    <div class="form-group">
+        <label>Obaveza:</label>
+        <input asp-for="Obaveza" class="form-control" readonly />
+    </div>
+    <div class="form-group">
+        <label>Zavrseno procentualno: </label>
+        <input asp-for="ZavrsenoProcentualno" class="form-control"/>%
+    </div>
+    <button class="btn btn-success" >Spremi</button>
+</form>
+<script src="~/js/UrediAjax.js"></script>
+

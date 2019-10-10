@@ -1,0 +1,13 @@
+﻿@model RS1_Ispit_asp.net_core.ViewModels.UrediPrisutanVM
+<form action="/ajax/spremiPrisutan" method="post" ajax-poziv="da" ajax-rezultat="ajaxDiv">
+    <input asp-for="ID" hidden/>
+    <div class="form-group">
+        <label>Ucenik</label>
+        <span class="form-control">@Model.Ucenik</span>
+    </div>
+    <div class="form-group">
+        <label>Ocjena</label>
+        <input asp-for="Ocjena" class="form-control" />
+    </div>
+    <button class="btn btn-success">Spremi</button>
+</form>

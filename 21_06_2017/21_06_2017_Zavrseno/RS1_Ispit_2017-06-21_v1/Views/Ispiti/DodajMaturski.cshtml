@@ -1,0 +1,17 @@
+﻿@model RS1_Ispit_2017_06_21_v1.ViewModels.DodajMaturskiVm
+<h2>Novi maturski ispit</h2>
+<form action="/Ispiti/SpremiMaturski">
+    <div class="form-group">
+        <label>Ispitivac</label>
+        <select asp-for="NastavnikID" asp-items="Model.Nastavnici" class="form-control"></select>
+    </div>
+    <div class="form-group">
+        <label>Datum</label>
+        <input asp-for="Datum" type="date" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Odjeljenje</label>
+        <select asp-for="OdjeljenjeID" asp-items="Model.Odjeljenja" class="form-control"></select>
+    </div>
+    <button type="submit" class="btn btn-success">Spremi</button>
+</form>

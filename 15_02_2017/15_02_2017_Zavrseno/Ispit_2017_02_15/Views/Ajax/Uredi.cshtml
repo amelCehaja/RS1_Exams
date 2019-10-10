@@ -1,0 +1,17 @@
+﻿@using Ispit_2017_02_15.ViewModels
+@model EditBodovi
+<form id="form">
+    <input asp-for="ID" hidden />
+    <div class="form-group">
+        <label>Student:</label>
+        <input asp-for="Student" readonly class="form-control"/>
+    </div>
+    <div class="form-group">
+        <label>Bodovi:</label>
+        <input asp-for="Bodovi" class="form-control" />
+        <span asp-validation-for="Bodovi" class="text-danger"></span>
+    </div>
+    <button type="submit">Spremi</button>
+</form>
+<script src="~/js/dodajBodove.js"></script>
+

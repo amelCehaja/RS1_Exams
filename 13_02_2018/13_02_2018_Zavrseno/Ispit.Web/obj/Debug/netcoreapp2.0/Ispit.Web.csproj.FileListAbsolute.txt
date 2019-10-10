@@ -1,0 +1,14 @@
+D:\ProgrammingProjects\.NET\13_02_2018\13_02_2018\Ispit.Web\bin\Debug\netcoreapp2.0\Ispit.Web.deps.json
+D:\ProgrammingProjects\.NET\13_02_2018\13_02_2018\Ispit.Web\bin\Debug\netcoreapp2.0\Ispit.Web.runtimeconfig.json
+D:\ProgrammingProjects\.NET\13_02_2018\13_02_2018\Ispit.Web\bin\Debug\netcoreapp2.0\Ispit.Web.runtimeconfig.dev.json
+D:\ProgrammingProjects\.NET\13_02_2018\13_02_2018\Ispit.Web\bin\Debug\netcoreapp2.0\Ispit.Web.dll
+D:\ProgrammingProjects\.NET\13_02_2018\13_02_2018\Ispit.Web\bin\Debug\netcoreapp2.0\Ispit.Web.pdb
+D:\ProgrammingProjects\.NET\13_02_2018\13_02_2018\Ispit.Web\bin\Debug\netcoreapp2.0\Ispit.Data.dll
+D:\ProgrammingProjects\.NET\13_02_2018\13_02_2018\Ispit.Web\bin\Debug\netcoreapp2.0\Ispit.Data.pdb
+D:\ProgrammingProjects\.NET\13_02_2018\13_02_2018\Ispit.Web\obj\Debug\netcoreapp2.0\Ispit.Web.csprojAssemblyReference.cache
+D:\ProgrammingProjects\.NET\13_02_2018\13_02_2018\Ispit.Web\obj\Debug\netcoreapp2.0\Ispit.Web.csproj.CoreCompileInputs.cache
+D:\ProgrammingProjects\.NET\13_02_2018\13_02_2018\Ispit.Web\obj\Debug\netcoreapp2.0\Ispit.Web.AssemblyInfoInputs.cache
+D:\ProgrammingProjects\.NET\13_02_2018\13_02_2018\Ispit.Web\obj\Debug\netcoreapp2.0\Ispit.Web.AssemblyInfo.cs
+D:\ProgrammingProjects\.NET\13_02_2018\13_02_2018\Ispit.Web\obj\Debug\netcoreapp2.0\Ispit.Web.csproj.CopyComplete
+D:\ProgrammingProjects\.NET\13_02_2018\13_02_2018\Ispit.Web\obj\Debug\netcoreapp2.0\Ispit.Web.dll
+D:\ProgrammingProjects\.NET\13_02_2018\13_02_2018\Ispit.Web\obj\Debug\netcoreapp2.0\Ispit.Web.pdb

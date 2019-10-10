@@ -1,0 +1,42 @@
+﻿@using RS1_Ispit_asp.net_core.ViewModels
+@model PrikazUputnicaVM
+
+<table class="table" border="1">
+    <thead>
+        <tr>
+            <th colspan="5" style="text-align:center; background-color:grey; color:white; text-decoration:solid;">
+                Prikaz evidentiranih uputnica
+            </th>
+        </tr>
+        <tr>
+            <th>Uputio</th>
+            <th>Pacijent</th>
+            <th>Vrsta pretrage</th>
+            <th>Datum evidentiranja rezultata pretrage</th>
+            <th>Akcija</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var x in Model.Uputnice)
+        {
+            <tr>
+                <td>@x.Uputio</td>
+                <td>@x.Pacijent</td>
+                <td>@x.VrstaPretrage</td>
+                <td>
+                    @if (x.DatumEvidentiranja.HasValue)
+                    {
+                        @x.DatumEvidentiranja.ToString().Substring(0,10)
+                    }
+                    else
+                    {
+                        <p>(nema rezultata)</p>
+                    }
+                </td>
+                <td><a href="/Uputnica/Detalji?id=@x.ID">Detalji</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a href="/uputnica/dodaj" class="btn btn-success">Dodaj uputnicu</a>

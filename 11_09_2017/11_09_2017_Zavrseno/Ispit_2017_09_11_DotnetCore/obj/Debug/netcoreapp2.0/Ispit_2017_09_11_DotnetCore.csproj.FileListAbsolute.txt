@@ -1,0 +1,11 @@
+D:\ProgrammingProjects\.NET\11_09_2017\11_09_2017\Ispit_2017_09_11_DotnetCore\bin\Debug\netcoreapp2.0\Ispit_2017_09_11_DotnetCore.deps.json
+D:\ProgrammingProjects\.NET\11_09_2017\11_09_2017\Ispit_2017_09_11_DotnetCore\bin\Debug\netcoreapp2.0\Ispit_2017_09_11_DotnetCore.runtimeconfig.json
+D:\ProgrammingProjects\.NET\11_09_2017\11_09_2017\Ispit_2017_09_11_DotnetCore\bin\Debug\netcoreapp2.0\Ispit_2017_09_11_DotnetCore.runtimeconfig.dev.json
+D:\ProgrammingProjects\.NET\11_09_2017\11_09_2017\Ispit_2017_09_11_DotnetCore\bin\Debug\netcoreapp2.0\Ispit_2017_09_11_DotnetCore.dll
+D:\ProgrammingProjects\.NET\11_09_2017\11_09_2017\Ispit_2017_09_11_DotnetCore\bin\Debug\netcoreapp2.0\Ispit_2017_09_11_DotnetCore.pdb
+D:\ProgrammingProjects\.NET\11_09_2017\11_09_2017\Ispit_2017_09_11_DotnetCore\obj\Debug\netcoreapp2.0\Ispit_2017_09_11_DotnetCore.csprojAssemblyReference.cache
+D:\ProgrammingProjects\.NET\11_09_2017\11_09_2017\Ispit_2017_09_11_DotnetCore\obj\Debug\netcoreapp2.0\Ispit_2017_09_11_DotnetCore.csproj.CoreCompileInputs.cache
+D:\ProgrammingProjects\.NET\11_09_2017\11_09_2017\Ispit_2017_09_11_DotnetCore\obj\Debug\netcoreapp2.0\Ispit_2017_09_11_DotnetCore.AssemblyInfoInputs.cache
+D:\ProgrammingProjects\.NET\11_09_2017\11_09_2017\Ispit_2017_09_11_DotnetCore\obj\Debug\netcoreapp2.0\Ispit_2017_09_11_DotnetCore.AssemblyInfo.cs
+D:\ProgrammingProjects\.NET\11_09_2017\11_09_2017\Ispit_2017_09_11_DotnetCore\obj\Debug\netcoreapp2.0\Ispit_2017_09_11_DotnetCore.dll
+D:\ProgrammingProjects\.NET\11_09_2017\11_09_2017\Ispit_2017_09_11_DotnetCore\obj\Debug\netcoreapp2.0\Ispit_2017_09_11_DotnetCore.pdb

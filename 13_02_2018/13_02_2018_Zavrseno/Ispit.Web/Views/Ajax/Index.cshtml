@@ -1,0 +1,31 @@
+﻿@model Ispit.Web.ViewModels.ObavezeDogadajaVM
+
+<table class="table table-bordered" border="1">
+    <thead>
+        <tr>
+            <th>Naziv</th>
+            <th>Procenat realizacije obaveze</th>
+            <th>Salji notifikaciju x dana unaprijed</th>
+            <th>Ponavljaj notifikaciju svaki dan do pocetka dogadaja</th>
+            <th>Akcija</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var x in Model.Obaveze)
+        {
+            <tr>
+                <td>@x.Naziv</td>
+                <td>@x.Procent</td>
+                <td>@x.BrojDana</td>
+                <td>@x.PonavljajNotifikaciju</td>
+                <td><a data-id="@x.ID" class="editBtn btn btn-primary">Uredi</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
+<style>
+    th, td{
+        text-align:center;
+    }
+</style>
+<script src="~/js/UrediAjax.js"></script>

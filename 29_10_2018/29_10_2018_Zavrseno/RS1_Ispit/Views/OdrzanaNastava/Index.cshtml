@@ -1,0 +1,20 @@
+﻿@model RS1_Ispit_asp.net_core.ViewModels.PrikazNastavnika
+<table class="table" border="1">
+    <thead>
+        <tr>
+            <th>Skola</th>
+            <th>Ime i prezime nastavnika</th>
+            <th>Akcija</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var x in Model.Nastavnici)
+        {
+            <tr>
+                <td>@x.Skola</td>
+                <td>@x.Nastavnik</td>
+                <td><a href="/odrzananastava/odabirNastavnika?nastavnikID=@x.NastavnikID&&skolaID=@x.SkolaID">Odaberi</a></td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,20 @@
+﻿@using RS1_Ispit_asp.net_core.ViewModels
+@model DetaljiUputnicaVM
+
+<h2>Detalji uputnice</h2>
+<h3>Podaci o uputnici</h3>
+<input asp-for="ID" id="uputnicaID" hidden/>
+<p>Datum uputnice: @Model.DatumUputnice</p>
+<p>Pacijent: @Model.Pacijent</p>
+<br />
+<br />
+<p>Datum rezultata: @Model.DatumRezultata</p>
+@if (Model.DatumRezultata == null)
+{
+    <a href="/uputnica/zakljucaj?id=@Model.ID">Zaključaj</a>
+}
+<script src="~/js/UputnicaAjax.js"></script>
+<div id="ajaxDiv"></div>
+
+
+

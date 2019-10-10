@@ -1,0 +1,27 @@
+﻿@using Ispit_2017_09_11_DotnetCore.ViewModels
+@model OdjeljenjeUceniciVM
+
+<h3>Odjeljenje stavke</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Broj u dnevniku</th>
+            <th>Ucenik</th>
+            <th>Broj zakljucnih ocjena (kraj godine)</th>
+            <th>Akcija</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var x in Model.Ucenici)
+        {
+            <tr>
+                <td>@x.BrojUDnevniku</td>
+                <td>@x.ImePrezime</td>
+                <td>@x.BrojZakljucnih</td>
+                <td><a data-id="@x.ID" class="deleteBtn btn btn-danger">Obrisi</a><a data-id="@x.ID" class="editBtn btn btn-info">Detalji</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
+<a id="dodaj" class="btn btn-primary">Dodaj</a>
+<script src="~/js/DodajUcenikaAjax.js"></script>

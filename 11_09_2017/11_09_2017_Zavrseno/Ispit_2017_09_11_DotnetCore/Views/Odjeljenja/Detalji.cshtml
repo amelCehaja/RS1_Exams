@@ -1,0 +1,32 @@
+﻿@using Ispit_2017_09_11_DotnetCore.ViewModels
+@model OdjeljenjeDetaljiVM
+
+<h2>Detalji Odjeljenja</h2>
+<form> 
+    <input asp-for="ID" id="odjeljenjeID" hidden />
+    <div class="form-group">
+        <label>Skolska godina</label>
+        <input asp-for="SkolskaGodina" class="form-control" readonly/>
+    </div>
+    <div class="form-group">
+        <label>Razred</label>
+        <input asp-for="Razred" class="form-control" readonly/>
+    </div>
+    <div class="form-group">
+        <label>Oznaka</label>
+        <input asp-for="Oznaka" class="form-control" readonly/>
+    </div>
+    <div class="form-group">
+        <label>Razrednik</label>
+        <input asp-for="Razrednik" class="form-control" readonly/>
+    </div>
+    <div class="form-group">
+        <label>Broj predmeta</label>
+        <input asp-for="BrojPredmeta" class="form-control" readonly/>
+    </div>
+    <div class="form-group">
+        <a href="/odjeljenja/RekonstrukcijaRednihBrojeva?odjeljenjeID=@Model.ID" class="btn btn-primary">Rekonstruisi brojeve u dnevniku</a>
+    </div>
+</form>
+<div id="ajaxDiv"></div>
+<script src="~/js/DetaljiOdjeljenjeAjax.js"></script>

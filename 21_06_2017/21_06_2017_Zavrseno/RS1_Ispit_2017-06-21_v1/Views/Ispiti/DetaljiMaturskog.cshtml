@@ -1,0 +1,14 @@
+﻿@model RS1_Ispit_2017_06_21_v1.ViewModels.DetaljiMaturskogVM
+
+<h2>Detalji maturskog ispita</h2>
+<h3>Podaci o ispitu</h3>
+<input asp-for="ID" id="id" hidden />
+<label>Ispitivac:</label>
+<p>@Model.Nastavnik</p>
+<label>Datum:</label>
+<p>@Model.Datum</p>
+<label>Odjeljenje:</label>
+<p>@Model.Odjeljenje</p>
+
+<div id="ajaxDiv"></div>
+<script src="~/js/DetaljiMaturskogAjax.js"></script>

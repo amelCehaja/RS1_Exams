@@ -1,0 +1,25 @@
+﻿@using Ispit_2017_02_15.ViewModels
+@model EditCasVM
+
+<h2>Uredi čas</h2>
+<form action="/cas/saveEdit" method="post">
+    <input id="ajaxID" asp-for="ID" hidden />
+    <div class="form-group">
+        <label>Nastavnik:</label>
+        <input asp-for="Nastavnik" readonly class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Datum:</label>
+        <input type="date" asp-for="Datum" class="form-control" />
+        <span asp-validation-for="Datum" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label>Ak. godina / Predmet</label>
+        <input asp-for="AkGod" readonly class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-success">Snimi</button>
+</form>
+
+<div id="ajaxDiv"></div>
+
+<script src="~/js/edit.js"></script>

@@ -1,0 +1,19 @@
+﻿@model RS1_Ispit_asp.net_core.ViewModels.EditCasVM
+<form action="/odrzanaNastava/spremiEdit" method="post">
+    <input id="id" asp-for="ID" hidden />
+    <div class="form-group">
+        <label>Datum</label>
+        <input asp-for="Datum" readonly class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Odjeljenje</label>
+        <input asp-for="Odjeljenje" readonly class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Sadrzaj casa</label>
+        <textarea asp-for="Sadrzaj" class="form-control"></textarea>
+    </div>
+    <button class="btn btn-success">Spremi</button>
+</form>
+<div id="ajaxDiv"></div>
+<script src="~/js/JavaScript.js"></script>

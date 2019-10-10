@@ -1,0 +1,9 @@
+D:\ProgrammingProjects\.NET\13_02_2018\13_02_2018\Ispit.Data\bin\Debug\netcoreapp2.0\Ispit.Data.deps.json
+D:\ProgrammingProjects\.NET\13_02_2018\13_02_2018\Ispit.Data\bin\Debug\netcoreapp2.0\Ispit.Data.dll
+D:\ProgrammingProjects\.NET\13_02_2018\13_02_2018\Ispit.Data\bin\Debug\netcoreapp2.0\Ispit.Data.pdb
+D:\ProgrammingProjects\.NET\13_02_2018\13_02_2018\Ispit.Data\obj\Debug\netcoreapp2.0\Ispit.Data.csprojAssemblyReference.cache
+D:\ProgrammingProjects\.NET\13_02_2018\13_02_2018\Ispit.Data\obj\Debug\netcoreapp2.0\Ispit.Data.csproj.CoreCompileInputs.cache
+D:\ProgrammingProjects\.NET\13_02_2018\13_02_2018\Ispit.Data\obj\Debug\netcoreapp2.0\Ispit.Data.AssemblyInfoInputs.cache
+D:\ProgrammingProjects\.NET\13_02_2018\13_02_2018\Ispit.Data\obj\Debug\netcoreapp2.0\Ispit.Data.AssemblyInfo.cs
+D:\ProgrammingProjects\.NET\13_02_2018\13_02_2018\Ispit.Data\obj\Debug\netcoreapp2.0\Ispit.Data.dll
+D:\ProgrammingProjects\.NET\13_02_2018\13_02_2018\Ispit.Data\obj\Debug\netcoreapp2.0\Ispit.Data.pdb

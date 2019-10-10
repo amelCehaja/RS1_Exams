@@ -1,0 +1,48 @@
+﻿@model RS1_Ispit_asp.net_core.ViewModels.PrikazMaturskihIspitaVM
+
+<table class="table" border="1">
+    <thead>
+        <tr>
+            <th>Datum</th>
+            <th>Skola</th>
+            <th>Predmet</th>
+            <th>Nisu pristupili</th>
+            <th>Akcija</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var x in Model.MaturskiIspiti)
+        {
+            <tr>
+                <td>@x.Datum</td>
+                <td>@x.Skola</td>
+                <td>@x.Predmet</td>
+                <td class="ucenici">
+                    <p>
+                        @foreach (var ucenik in x.NisuPristupili)
+                        {
+                            <span>@ucenik, </span>
+                        }
+                    </p>
+                </td>
+                <td><a href="/OdrzanaNastava/UrediMaturskiIspit?id=@x.ID">Uredi</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
+<style>
+    td, th {
+        text-align: center;
+    }
+
+    .ucenici {
+        text-align: left;
+    }
+
+    th {
+        background-color: gray;
+        color: black;
+        font-weight: bold;
+    }
+</style>
+<a href="/OdrzanaNastava/DodajMaturski?id=@Model.NastavnikID" class="btn btn-success">Dodaj</a>

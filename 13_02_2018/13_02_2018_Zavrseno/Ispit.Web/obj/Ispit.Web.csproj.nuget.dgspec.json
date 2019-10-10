@@ -1,0 +1,147 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\ProgrammingProjects\\.NET\\13_02_2018\\13_02_2018\\Ispit.Web\\Ispit.Web.csproj": {}
+  },
+  "projects": {
+    "D:\\ProgrammingProjects\\.NET\\13_02_2018\\13_02_2018\\Ispit.Data\\Ispit.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\ProgrammingProjects\\.NET\\13_02_2018\\13_02_2018\\Ispit.Data\\Ispit.Data.csproj",
+        "projectName": "Ispit.Data",
+        "projectPath": "D:\\ProgrammingProjects\\.NET\\13_02_2018\\13_02_2018\\Ispit.Data\\Ispit.Data.csproj",
+        "packagesPath": "C:\\Users\\cehaj\\.nuget\\packages\\",
+        "outputPath": "D:\\ProgrammingProjects\\.NET\\13_02_2018\\13_02_2018\\Ispit.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\cehaj\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[2.0.1, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "D:\\ProgrammingProjects\\.NET\\13_02_2018\\13_02_2018\\Ispit.Web\\Ispit.Web.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\ProgrammingProjects\\.NET\\13_02_2018\\13_02_2018\\Ispit.Web\\Ispit.Web.csproj",
+        "projectName": "Ispit.Web",
+        "projectPath": "D:\\ProgrammingProjects\\.NET\\13_02_2018\\13_02_2018\\Ispit.Web\\Ispit.Web.csproj",
+        "packagesPath": "C:\\Users\\cehaj\\.nuget\\packages\\",
+        "outputPath": "D:\\ProgrammingProjects\\.NET\\13_02_2018\\13_02_2018\\Ispit.Web\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\cehaj\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.0": {
+            "projectReferences": {
+              "D:\\ProgrammingProjects\\.NET\\13_02_2018\\13_02_2018\\Ispit.Data\\Ispit.Data.csproj": {
+                "projectPath": "D:\\ProgrammingProjects\\.NET\\13_02_2018\\13_02_2018\\Ispit.Data\\Ispit.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.0": {
+          "dependencies": {
+            "Microsoft.AspNetCore.All": {
+              "target": "Package",
+              "version": "[2.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[2.0.1, )"
+            },
+            "Microsoft.NETCore.App": {
+              "target": "Package",
+              "version": "[2.0.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.0.4, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

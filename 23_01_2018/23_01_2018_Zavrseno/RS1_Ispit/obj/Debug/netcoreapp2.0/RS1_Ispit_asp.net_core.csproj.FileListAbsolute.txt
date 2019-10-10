@@ -1,0 +1,11 @@
+D:\ProgrammingProjects\.NET\23_01_2018\23_01_2018\RS1_Ispit\bin\Debug\netcoreapp2.0\RS1_Ispit_asp.net_core.deps.json
+D:\ProgrammingProjects\.NET\23_01_2018\23_01_2018\RS1_Ispit\bin\Debug\netcoreapp2.0\RS1_Ispit_asp.net_core.runtimeconfig.json
+D:\ProgrammingProjects\.NET\23_01_2018\23_01_2018\RS1_Ispit\bin\Debug\netcoreapp2.0\RS1_Ispit_asp.net_core.runtimeconfig.dev.json
+D:\ProgrammingProjects\.NET\23_01_2018\23_01_2018\RS1_Ispit\bin\Debug\netcoreapp2.0\RS1_Ispit_asp.net_core.dll
+D:\ProgrammingProjects\.NET\23_01_2018\23_01_2018\RS1_Ispit\bin\Debug\netcoreapp2.0\RS1_Ispit_asp.net_core.pdb
+D:\ProgrammingProjects\.NET\23_01_2018\23_01_2018\RS1_Ispit\obj\Debug\netcoreapp2.0\RS1_Ispit_asp.net_core.csprojAssemblyReference.cache
+D:\ProgrammingProjects\.NET\23_01_2018\23_01_2018\RS1_Ispit\obj\Debug\netcoreapp2.0\RS1_Ispit_asp.net_core.csproj.CoreCompileInputs.cache
+D:\ProgrammingProjects\.NET\23_01_2018\23_01_2018\RS1_Ispit\obj\Debug\netcoreapp2.0\RS1_Ispit_asp.net_core.AssemblyInfoInputs.cache
+D:\ProgrammingProjects\.NET\23_01_2018\23_01_2018\RS1_Ispit\obj\Debug\netcoreapp2.0\RS1_Ispit_asp.net_core.AssemblyInfo.cs
+D:\ProgrammingProjects\.NET\23_01_2018\23_01_2018\RS1_Ispit\obj\Debug\netcoreapp2.0\RS1_Ispit_asp.net_core.dll
+D:\ProgrammingProjects\.NET\23_01_2018\23_01_2018\RS1_Ispit\obj\Debug\netcoreapp2.0\RS1_Ispit_asp.net_core.pdb

@@ -1,0 +1,32 @@
+﻿@using Ispit_2017_02_15.ViewModels
+@model OdrzaniCasoviPrikaz
+<h2>Index</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th colspan="4">Prikaz održanih časova za nastavnika @Model.Nastavnik</th>
+        </tr>
+        <tr>
+            <th>Datum održanog časa</th>
+            <th>Akademska godina</th>
+            <th>Broj prisutnih</th>
+            <th>Predmet</th>
+            <th>Prosjecna ocjena</th>
+            <th>Akcija</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var x in Model.Casovi)
+        {
+            <tr>
+                <td>@x.Datum</td>
+                <td>@x.AkademskaGodina</td>
+                <td>@x.BrojPrisutnih</td>
+                <td>@x.Predmet</td>
+                <td>@x.ProsjecnaOcjena</td>
+                <td><a href="/cas/edit?id=@x.ID">Edit</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
+<a href="/cas/dodaj" class="btn btn-success">Dodaj</a>

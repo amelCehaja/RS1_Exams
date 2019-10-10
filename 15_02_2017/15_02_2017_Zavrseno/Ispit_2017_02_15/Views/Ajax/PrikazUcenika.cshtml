@@ -1,0 +1,44 @@
+﻿@using Ispit_2017_02_15.ViewModels
+@model PrikazUcenikaVM
+
+<table border="1" class="table">
+    <thead>
+        <tr>
+            <th>Student</th>
+            <th>Bodovi</th>
+            <th>Prisutan</th>
+            <th>Akcija</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var x in Model.ucenici)
+        {
+            <tr>
+                <td>@x.ImePrezime</td>
+                <td class="bodovi">
+                    @if (x.Prisutan == true)
+                    {
+                        @x.Bodovi
+                    }
+                </td>
+                <td>
+                    @if (x.Prisutan == true)
+                    {
+                        <a class="prisutan" style="background-color: lightgreen; color: aliceblue;" data-id="@x.ID"> Prisutan </a>
+                    }
+                    else
+                    {
+                        <a class="odsutan" style="background-color: lightcoral; color:aliceblue;" data-id="@x.ID"> Odsutan </a>
+                    }
+                </td>
+                <td>
+                    @if (x.Prisutan == true)
+                    {
+                        <a class="uredi" data-id="@x.ID">Uredi</a>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<script src="~/js/prikazUcenika.js"></script>

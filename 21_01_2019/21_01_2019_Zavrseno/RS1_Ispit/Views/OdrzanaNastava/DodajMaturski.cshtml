@@ -1,0 +1,26 @@
+﻿@model RS1_Ispit_asp.net_core.ViewModels.DodajMaturskiVM
+
+<form action="/OdrzanaNastava/SpremiMaturskiIspit" method="post">
+    <div class="form-group">
+        <label>Skola:</label>
+        <select asp-for="SkolaID" asp-items="Model.Skole" class="form-control"></select>
+    </div>
+    <div class="form-group">
+        <input asp-for="NastavnikID" hidden />
+        <label>Nastavnik:</label>
+        <p>@Model.Nastavnik</p>
+    </div>
+    <div class="form-group">
+        <label>Skolska godina</label>
+        <p>@Model.SkolskaGodina</p>
+    </div>
+    <div class="form-group">
+        <label>Datum ispita</label>
+        <input asp-for="DatumIspita" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Predmet:</label>
+        <select asp-for="PredmetID" asp-items="Model.Predmeti" class="form-control"></select>
+    </div>
+    <button class="btn btn-success">Spremi</button>
+</form>

@@ -1,0 +1,23 @@
+﻿@using RS1_Ispit_asp.net_core.ViewModels
+@model DodajUputnicuVM
+
+<h2>Nova uputnica</h2>
+<form action="/uputnica/spremi" method="post">
+    <div class="form-group">
+        <label>Ljekar uputio:</label>
+        <select asp-for="LjekarUputioID" asp-items="Model.Ljekari" class="form-control"></select>
+    </div>
+    <div class="form-group">
+        <label>Datum uputnice</label>
+        <input type="date" asp-for="Datum" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Pacijent:</label>
+        <select asp-for="PacijentID" asp-items="Model.Pacijenti" class="form-control"></select>
+    </div>
+    <div class="form-group">
+        <label>Vrsta pretrage:</label>
+        <select asp-for="VrstaPretrageID" asp-items="Model.VrstePretrage" class="form-control"></select>
+    </div>
+    <button type="submit" class="btn btn-success">Save</button>
+</form>

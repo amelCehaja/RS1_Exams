@@ -1,0 +1,43 @@
+﻿@model RS1_Ispit_2017_06_21_v1.ViewModels.PrikazUcenika
+
+<h3>Rezultati ispita</h3>
+<table class="table table-bordered" border="1">
+    <thead>
+        <tr>
+            <th>Učenik</th>
+            <th>Opći uspjeh</th>
+            <th>Bodovi (max 100)</th>
+            <th>Oslobođen</th>
+            <th>Akcija</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var x in Model.Ucenici)
+        {
+            <tr>
+                <td>@x.ImePrezime</td>
+                <td>@x.OpciUspjeh</td>
+                <td>
+                    @if (x.Bodovi == null)
+                    {<p>oslobođen</p>}
+                    else
+                    {
+                        <form class="forma">
+                            <input type="number" name="id" value="@x.ID" hidden />
+                            <input type="number" name="bodovi" value="@x.Bodovi"/>
+                            <button type="submit" class="btn btn-success">Spremi</button>
+                        </form>
+                    }
+                </td>
+                <td>@x.Osloboden<a data-id="@x.ID" class="changeBtn">(promijeni)</a></td>
+                <td>
+                    @if (x.Osloboden == "NE")
+                    {
+                        <a class="editBtn btn btn-info" data-id="@x.ID">Uredi</a>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<script src="~/js/MaturskiStavka.js"></script>

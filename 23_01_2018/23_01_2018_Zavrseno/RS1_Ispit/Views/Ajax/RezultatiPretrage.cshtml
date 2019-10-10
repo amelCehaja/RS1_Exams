@@ -1,0 +1,74 @@
+﻿@using RS1_Ispit_asp.net_core.ViewModels
+@model RezultatiPretrageVM
+
+<h2>RezultatiPretrage</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Pretraga</th>
+            <th>Izmjerena vrijednost</th>
+            <th>Referentne vrijednosti</th>
+            <th>JMJ</th>
+            @if (Model.IsGotov == false)
+            {
+                <th>Akcija</th>
+            }
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var x in Model.Rezultati)
+        {
+            <tr>
+                <td>@x.Pretraga</td>
+
+
+                @if (Model.urediRezultat != null && Model.urediRezultat.ID == x.ID)
+                {
+                    <td>
+                        <form id="form">
+                            <input asp-for="urediRezultat.ID" hidden>
+                            @if (Model.urediRezultat.Vrijednost.Count == 0)
+                            {
+                                <input asp-for="urediRezultat.IzmjerenaVrijednost" />
+                            }
+                            else
+                            {
+                                <select asp-for="urediRezultat.VrijednostID" asp-items="Model.urediRezultat.Vrijednost"></select>
+                            }
+                        </form>
+                    </td>
+                    <td>@x.ReferenteVrijedosti</td>
+                    <td>@x.JMJ</td>
+                    <td><a class="btn btn-success" id="spremi">Spremi</a></td>
+                }
+
+                else
+                {
+
+                    <td>
+                        @if (x.IsReferentna == true && x.IzmjereneVrijednosti != "(nije evidentirano)")
+                        {
+                            <p style="background-color:green; color:white; font-weight:bold; text-align:center;">@x.IzmjereneVrijednosti</p>
+                        }
+                        else if (x.IzmjereneVrijednosti != "(nije evidentirano)")
+                        {
+                            <p style="background-color:red; color:white; font-weight:bold; text-align:center;">@x.IzmjereneVrijednosti</p>
+                        }
+                        else
+                        {
+                            <p style="font-weight:bold; text-align:center;">@x.IzmjereneVrijednosti</p>
+                        }
+                    </td>
+                    <td>@x.ReferenteVrijedosti</td>
+                    <td>@x.JMJ</td>
+                    @if (Model.IsGotov == false)
+                    {
+                        <td><a href="/Ajax/RezultatiPretrage?uputnicaID=@Model.uputnicaID&&rezultatID=@x.ID" class="ajaxLink">Uredi</a></td>
+                    }
+                }
+            </tr>
+        }
+    </tbody>
+</table>
+<script src="~/js/RezultatAjax.js"></script>
+<script src="~/js/UrediRezultat.js"></script>
